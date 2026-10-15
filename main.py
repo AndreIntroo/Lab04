@@ -40,7 +40,9 @@ def main():
 
         elif scelta == "4":
             print("\n--- Elenco espositori ---")
-            lingotto.elenca_espositori()
+            elenco = lingotto.elenca_espositori()
+            for e in elenco:
+                print(e, end="\n")
 
         elif scelta == "5":
             stand_ordinati = lingotto.stand_ordinati_per_prezzo()
