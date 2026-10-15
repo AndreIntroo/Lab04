@@ -64,7 +64,7 @@ class Stand:
             stato =f" assegnato a {self.espositore_assegnato.codice}"
         else:
             stato = f"Disponibile"
-        return f"STAND: {self.codice} | padiglione: {self.padiglione} | superficie: {self.metri_q}| prezzo :{self.calcola_prezzo():.2f} | stato:{stato}"
+        return f"STAND: {self.codice} | padiglione: {self.padiglione} | superficie: {self.metri_q} m^2| prezzo :{self.calcola_prezzo():.2f} € | stato:{stato}"
     def __eq__(self, other):
         if isinstance(other, Stand):
             return self.codice == other.codice
